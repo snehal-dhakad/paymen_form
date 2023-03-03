@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> payment form</title>
+    
+
+</head>
+<body>
+    <form action="" class="container">
+        <h1> payment form</h1>
+        <h2> contant information</h2>
+        <p> name: <input type="text" name="name" required></p> <!--required tag for nessary condition-->
+        <fieldset>      <!--commom group-->
+            <legend>Gender</legend>   <!--gives name to group-->
+            <p>
+                Male <input type="radio" name="gender" id="male"required> female <input type="radio" name="gender" id="female" required>             
+            </p>
+        </fieldset>
+        <p>
+            Address: <textarea name="Address" id="Address" cols="30" rows="10"></textarea>
+        </p>
+        <p>
+            email:<input type="email" name="email" id="email" required>             
+        </p>
+        <p>
+             pincode:<input typr="number" name="pincode" id="pincode">
+        </p>
+        <p>
+            <h1>Payment Information</h1>
+        </p>
+        <P>
+            Card type:
+             <select name="card type" id="card type">  <!--select for when multipal option are there-->
+                <option value="">--select a card type--</option> <!--option tag for given option to user-->
+                <option value="visa">visa</option>
+                <option value="rupay">rupay</option>
+                <option value="master card"> master card</option>
+             </select>
+        </P>
+        <p>
+            card number:<input type="number" name="card_number" id="card number">
+        </p>
+        <p>
+            expiration date: <input type="date" name="exp_date" id="exp_date">
+        </p>
+        <p>
+            cvv:<input type="password" name="cvv" id="cvv">
+        </p>
+        <p>
+            <button>pay now</button>
+        </p>
+    </form>
+    
+</body>
+</html>
